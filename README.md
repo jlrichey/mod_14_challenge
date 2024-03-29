@@ -1,6 +1,6 @@
 # Module 14 Challenge - Machine Learning Trading Bot
 
-<img src="images/challenge14_header_img.png" alt="drawing" width="600"/>
+<img src="images/challenge14_header_img.png" alt="drawing" width="800"/>
 
 ## Overview
 
