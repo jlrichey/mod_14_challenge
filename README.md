@@ -63,7 +63,7 @@ The features (X) and target (y) were split into training and testing datasets us
 
 QUESTION - What impact resulted from increasing or decreasing the training window?
 
-ANSWER - <u>Decreasing the training window to one month</u> with the SVM model had a slight impact on the strategy returns, taking them from approximately 1.5 (50%) to a little under 1.4 (appx. 45%) over the study period. THe 
+ANSWER - **Decreasing the training window to one month** with the SVM model had a slight impact on the strategy returns, taking them from approximately 1.5 (50%) to a little under 1.4 (appx. 45%) over the study period. THe 
 
 ### Model Tuning 2 - Short SMA (Simple Moving Average) Input Features
 
