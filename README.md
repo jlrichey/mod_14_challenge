@@ -71,7 +71,7 @@ Three distinct deep learning models using a neural network were compiled for ana
 | ![Image1](images/tuned_SMA_short_2d_plot.png) | ![Image2](images/tuned_SMA_short_10d_plot.png) |
 | ![Image1](images/tuned_SMA_short_2d_class.png) | ![Image2](images/tuned_SMA_short_10d_class.png) |
 
-*Note: Days are actually 15 minute periods.*
+*Note: "Days" are actually 15 minute periods.*
 
 ### Model Tuning 3 - Long SMA (Simple Moving Average) Input Features
 
@@ -80,7 +80,7 @@ Three distinct deep learning models using a neural network were compiled for ana
 | ![Image1](images/tuning_SMA_long_50d_plot.png) | ![Image2](images/tuning_SMA_long_200d_plot.png) |
 | ![Image1](images/tuning_SMA_long_50d_class.png) | ![Image2](images/tuning_SMA_long_200d_class.png) |
 
-*Note: Days are actually 15 minute periods.*
+*Note: "Days" are actually 15 minute periods.*
 
 ### Logistic Regression (LR) Model
 
