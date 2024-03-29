@@ -54,7 +54,7 @@ Three distinct deep learning models using a neural network were compiled for ana
 
 | Plot            | Classification Report            |
 |--------------------|--------------------|
-| ![Image1](images/SVM_model_plot.png) | ![Image2](images/LR_model_class.png) |
+| ![Image1](images/SVM_model_plot.png) | ![Image2](images/LR_model_class1.png) |
 
 ### Model Tuning 1 - Training Window Adjustments
 
@@ -82,7 +82,7 @@ Three distinct deep learning models using a neural network were compiled for ana
 
 | Plot            | Classification Report            |
 |--------------------|--------------------|
-| ![Image1](images/LR_model_plot.png) | ![Image2](images/LR_model_class.png) |
+| ![Image1](images/LR_model_plot.png) | ![Image2](images/LR_model_class1.png) |
 
 ## Summary
 
