@@ -46,9 +46,7 @@ Several features were dropped (EIN and NAME) due to the irrelevance of the data 
 
 The features (X) and target (y) were split into training and testing datasets using the `train_test_split` function from the `scikit-learn` machine learning library. The datasets were then scaled utilizing `StandardScaler()`.
 
-## Binary Classification Models using a Neural Network
-
-Three distinct deep learning models using a neural network were compiled for analysis and evaluation using TensorFlow Keras. The following are the details and results of each binary classification model. 
+## Machine Learning Models and Tuning
 
 ### Support Vector Machine (SVM) Model (scv classifier)
 
@@ -63,6 +61,9 @@ Three distinct deep learning models using a neural network were compiled for ana
 | ![Image1](images/tuned_1mth_training_window_plot.png) | ![Image2](images/tuned_6mth_training_window_plot.png) |
 | ![Image1](images/tuned_1mth_training_window_class.png) | ![Image2](images/tuned_6mth_training_window_class.png) |
 
+QUESTION - What impact resulted from increasing or decreasing the training window?
+
+ANSWER - <u>Decreasing the training window to one month</u> with the SVM model had a slight impact on the strategy returns, taking them from approximately 1.5 (50%) to a little under 1.4 (appx. 45%) over the study period. THe 
 
 ### Model Tuning 2 - Short SMA (Simple Moving Average) Input Features
 
@@ -73,6 +74,10 @@ Three distinct deep learning models using a neural network were compiled for ana
 
 *Note: "Days" are actually 15 minute periods.*
 
+QUESTION - What impact resulted from increasing and decreasing the Short SMA window?
+
+ANSWER - 
+
 ### Model Tuning 3 - Long SMA (Simple Moving Average) Input Features
 
 | 50 Days*            | 200 Days*            |
@@ -81,6 +86,10 @@ Three distinct deep learning models using a neural network were compiled for ana
 | ![Image1](images/tuning_SMA_long_50d_class.png) | ![Image2](images/tuning_SMA_long_200d_class.png) |
 
 *Note: "Days" are actually 15 minute periods.*
+
+QUESTION - What impact resulted from increasing and decreasing the Long SMA window?
+
+ANSWER - 
 
 ### Logistic Regression (LR) Model
 
@@ -100,7 +109,5 @@ If I were to investigate further models for optimization, I would experiment wit
 The following sources were consulted in the completion of this project. 
 
 * [pandas.Pydata.org API Reference](https://pandas.pydata.org/docs/reference/index.html)
-* [Tensorflow Keras documentation](https://www.tensorflow.org/guide/keras)
 * [scikit-learn documentation](https://scikit-learn.org/stable/)
 * UCB FinTech Bootcamp instructor-led coding exercises
-* ChatGPT for LeakyReLU integration syntax
