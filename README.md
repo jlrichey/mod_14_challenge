@@ -63,19 +63,24 @@ Three distinct deep learning models using a neural network were compiled for ana
 | ![Image1](images/tuned_1mth_training_window_plot.png) | ![Image2](images/tuned_6mth_training_window_plot.png) |
 | ![Image1](images/tuned_1mth_training_window_class.png) | ![Image2](images/tuned_6mth_training_window_class.png) |
 
+
 ### Model Tuning 2 - Short SMA (Simple Moving Average) Input Features
 
-| 2 Days            | 10 Days            |
+| 2 Days*            | 10 Days*            |
 |--------------------|--------------------|
 | ![Image1](images/tuned_SMA_short_2d_plot.png) | ![Image2](images/tuned_SMA_short_10d_plot.png) |
 | ![Image1](images/tuned_SMA_short_2d_class.png) | ![Image2](images/tuned_SMA_short_10d_class.png) |
 
-### Model Tuning 3 - Long SMA Input Features
+*Note: Days are actually 15 minute periods.*
 
-| 50 Days            | 200 Days            |
+### Model Tuning 3 - Long SMA (Simple Moving Average) Input Features
+
+| 50 Days*            | 200 Days*            |
 |--------------------|--------------------|
 | ![Image1](images/tuning_SMA_long_50d_plot.png) | ![Image2](images/tuning_SMA_long_200d_plot.png) |
 | ![Image1](images/tuning_SMA_long_50d_class.png) | ![Image2](images/tuning_SMA_long_200d_class.png) |
+
+*Note: Days are actually 15 minute periods.*
 
 ### Logistic Regression (LR) Model
 
