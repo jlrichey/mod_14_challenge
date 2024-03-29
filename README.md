@@ -37,15 +37,6 @@ from sklearn.metrics import classification_report
 import warnings
 warnings.filterwarnings("ignore")
 ```
-
-## Preprocessing of the Data
-
-Several features were dropped (EIN and NAME) due to the irrelevance of the data to the deep learning model goals. 
-
-`OneHotEncoder` from `scikit-learn` was used to convert the categorical data (identified using `.dtypes`) to binary numerical values for the model and placed into a dataframe which was concatenated with the original dataframe's numerical values.
-
-The features (X) and target (y) were split into training and testing datasets using the `train_test_split` function from the `scikit-learn` machine learning library. The datasets were then scaled utilizing `StandardScaler()`.
-
 ## Machine Learning Models and Tuning
 
 ### Support Vector Machine (SVM) Model (scv classifier)
@@ -63,7 +54,9 @@ The features (X) and target (y) were split into training and testing datasets us
 
 QUESTION - What impact resulted from increasing or decreasing the training window?
 
-ANSWER - **Decreasing the training window to one month** with the SVM model had a slight impact on the strategy returns, taking them from approximately 1.5 (50%) to a little under 1.4 (appx. 45%) over the study period. THe 
+ANSWER - **Decreasing the training window to one month** with the SVM model had a slight impact on the strategy returns, taking them from approximately 1.5 (50%) to a little under 1.4 (appx. 45%) over the study period.
+
+**Increasing the training window to six months** had a significant impact on the strategy returns, taking them to a little over 1.8 (80%).
 
 ### Model Tuning 2 - Short SMA (Simple Moving Average) Input Features
 
@@ -76,7 +69,7 @@ ANSWER - **Decreasing the training window to one month** with the SVM model had 
 
 QUESTION - What impact resulted from increasing and decreasing the Short SMA window?
 
-ANSWER - 
+ANSWER - **Decreasing and increasing the short SMA window** caused the strategy and actual returns to line up very closely, showing little difference and coming in at at a lower return level. 
 
 ### Model Tuning 3 - Long SMA (Simple Moving Average) Input Features
 
@@ -89,7 +82,7 @@ ANSWER -
 
 QUESTION - What impact resulted from increasing and decreasing the Long SMA window?
 
-ANSWER - 
+ANSWER - **Decreasing and increasing the long SMA window** did not have a favorable impact on the returns outcome but did change the classification results significantly, as shown above. 
 
 ### Logistic Regression (LR) Model
 
@@ -100,9 +93,9 @@ ANSWER -
 
 ## Summary
 
-All three models had an approximate accuracy of 0.73 and an approximate loss of 0.55 (A2 was 0.56) when rounded to the nearest hundredth. The original model was the least complex with two hidden layers and one output layer. Its simplicity is seen in the step detail performance of 0 to 658us (microseconds). I would recommend the original model for these reasons. 
+The SVM model with a 6-month training window produced the highest strategy returns at approximately 1.825 (82.5%). The logistic regression model did not produce a favorable outcome, causing the strategy returns to reverse trend in the final year of the test period, ending at approximately 1.15 (15%) over the subject period. 
 
-If I were to investigate further models for optimization, I would experiment with fewer hidden layers, fewer nodes, and more and less epochs, among other approaches. 
+To continue tuning the results I address the fact that SMAs were set errantly to 15 min periods rather than days in the source file pseudocoding. I would explore actual 50, 100, 200 day SMAs for performance optimization. Also, additional machine learning classifiers such as `AdaBoost` and `DecisionTreeClassifier` should be examined for impact. 
 
 ## Sources
 
